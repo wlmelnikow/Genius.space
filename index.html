@@ -6,33 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сучасна пекарня</title>
+    <link rel="stylesheet" href="./styles/css/styles.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="#"></a>
-            <img src="sources/img/logo.svg" alt="Сучасна пекарня логотип">
 
+        <audio controls>
+            <source src="files/path/my.mp3">
+        </audio>
+        <nav>
+            <a href="./index.html">
+                <img src="sources/img/logo.svg" alt="Сучасна пекарня логотип">
+            </a>
             <ul>
-                <li><a href="#">Франшиза</a></li>
-                <li><a href="#">Наші традиції</a></li>
-                <li><a href="#">Формати</a></li>
-                <li><a href="#">Контакти</a></li>
+                <li><a class="header-link" href="#tradition-section">Наші традиції</a></li>
+                <li><a class="header-link" href="#chefs-section">Шеф-кухарі</a></li>
+                <li><a class="header-link" href="#formats-section">Формати</a></li>
+                <li><a class="header-link" href="#contact-section">Контакти</a></li>
             </ul>
         </nav>
-        <button type="button">Замовити дзвінок</button>
+        <button class="main-btn">Замовити дзвінок</button>
     </header>
-
     <main>
 
+        
         <section>
-            <h1>Сучасна пекарня</h1>
+            <h1 class="hero-title"><span class="modern-bakery">Сучасна</span> пекарня</h1>
+        </section>
+        
+        <section id="traditions-section">
+            <ul class="advantages-list">
+                <li>Великий попит на ринку</li>
+                <li>Доступні за бюджетом формати</li>
+                <li>Досвідчена управлінська команда</li>
+            </ul>
+        </section>
+        
+        <section id="formats-section">
             <img src="sources/img/baker-man.png" alt="Випічка батонів">
         </section>
+        
+        <section id="chefs-section">
+        </section>
+
+        <section id="contact-section">
+        </section>
+
         <section>
 
-            <h2>Новий формат традицій</h2>
+            <h2 class="main-title">Новий формат традицій</h2>
             <p><span>shop bakery</span> — це пекарня, яка взяла все найкраще, і зберегла смак традиційної випічки та
                 натуральність інгредієнтів.
             </p>
@@ -45,20 +68,22 @@
 
         </section>
         <section>
-            <h2>Наші - найкращі кухарі</h2>
+            <h2 class="main-title">Наші - найкращі кухарі</h2>
             <article>
-                <li>
-                    <h3>Настя</h3>
-                    <P>Привіт, я Настя!</P>
-                    <P>
-                        Вже 10 років, я свтілюю
-                        у життя цікаві та смачні ідеї.
-                    </P>
-                    <P>
-                        Я випічу для вас
-                        найсмачніщі вироби!
-                    </P>
-                </li>
+                <ul>
+                    <li>
+                        <h3>Настя</h3>
+                        <P>Привіт, я Настя!</P>
+                        <P>
+                            Вже 10 років, я свтілюю
+                            у життя цікаві та смачні ідеї.
+                        </P>
+                        <P>
+                            Я випічу для вас
+                            найсмачніщі вироби!
+                        </P>
+                    </li>
+                </ul>
             </article>
             <article>
                 <li>
@@ -74,7 +99,7 @@
             </article>
         </section>
         <section>
-            <h2>Формати</h2>
+            <h2 class="main-title">Формати</h2>
             <article>
                 <li>
                     <h3 lang="'en">Walrus</h3>
@@ -92,7 +117,7 @@
             </article>
         </section>
         <section>
-            <h2>Приєднуйся до мережі пекарень</h2>
+            <h2 class="main-title">Приєднуйся до мережі пекарень</h2>
 
         </section>
 
@@ -112,14 +137,16 @@
             <ul>
                 <li><a href="tel:+38 063 899 0535">+38 063 899 0535</a></li>
                 <li><a href="mailto:vladmelnikov022@gmail.com">vladmelnikov022@gmail.com</a></li>
-                <li><a href="https://maps.app.goo.gl/emS9zmw4kf6QyqG59" target="_blank">Українаб м. Миколаїв, вул. Соборна 21</a></li>
+                <li><a href="https://maps.app.goo.gl/emS9zmw4kf6QyqG59" target="_blank">Українаб м. Миколаїв, вул.
+                        Соборна 21</a></li>
 
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Instagram</a></li>
             </ul>
             <a href="#" target="_blank">Політика конфіденційності</a>
+            <p>&copy; Дані захищені</p>
         </address>
-        
+
     </footer>
 
 </body>

@@ -1,0 +1,57 @@
+:root {
+    --color-brand: #819b57
+}
+
+button > .main-btn {
+    color: #faf4ea;
+    background-color: var(--color-brand0);
+    border: 2px solid #819b57;
+    border-radius: 8px;
+}
+
+.button:hover {
+    color: crimson;
+    background-color: transparent;
+
+}
+
+.header-link {
+    color: rgb(255, 196, 0);
+}
+
+.header-link:hover {
+    color: #819b57;
+}
+
+ul, a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.hero-title {
+    color: var(--bakery-landing-1-c-2, #ffffff);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.modern-bakery {
+    color: #819B57;
+}
+
+.advantages-list {
+    background-color: #819B57;
+    color: var(--bakery-landing-1-background, #FAF4EA);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.main-title {
+    color: #31261A;
+}
