@@ -6,147 +6,163 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сучасна пекарня</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/css/styles.css">
 </head>
 
 <body>
     <header>
-
-        <audio controls>
-            <source src="files/path/my.mp3">
-        </audio>
-        <nav>
-            <a href="./index.html">
-                <img src="sources/img/logo.svg" alt="Сучасна пекарня логотип">
-            </a>
-            <ul>
-                <li><a class="header-link" href="#tradition-section">Наші традиції</a></li>
-                <li><a class="header-link" href="#chefs-section">Шеф-кухарі</a></li>
-                <li><a class="header-link" href="#formats-section">Формати</a></li>
-                <li><a class="header-link" href="#contact-section">Контакти</a></li>
-            </ul>
-        </nav>
-        <button class="main-btn">Замовити дзвінок</button>
+        <div class="container">
+            <audio controls>
+                <source src="files/path/my.mp3">
+            </audio>
+            <nav>
+                <a href="./index.html"><img src="sources/img/logo.svg" alt="Сучасна пекарня логотип">
+                </a>
+                <ul class="nav-bar">
+                    <li><a class="header-link" href="#tradition-section">Наші традиції</a></li>
+                    <li><a class="header-link" href="#chefs-section">Шеф-кухарі</a></li>
+                    <li><a class="header-link" href="#formats-section">Формати</a></li>
+                    <li><a class="header-link" href="#contact-section">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
 
-        
-        <section>
-            <h1 class="hero-title"><span class="modern-bakery">Сучасна</span> пекарня</h1>
+
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="hero-title"><span class="modern-bakery">Сучасна</span> пекарня</h1>
+                <button class="main-btn">Замовити дзвінок</button>
+            </div>
         </section>
-        
+
         <section id="traditions-section">
-            <ul class="advantages-list">
-                <li>Великий попит на ринку</li>
-                <li>Доступні за бюджетом формати</li>
-                <li>Досвідчена управлінська команда</li>
-            </ul>
+            <div class="container">
+                <ul class="advantages-list">
+                    <li>Великий попит на ринку</li>
+                    <li>Доступні за бюджетом формати</li>
+                    <li>Досвідчена управлінська команда</li>
+                </ul>
+            </div>
         </section>
-        
+
         <section id="formats-section">
-            <img src="sources/img/baker-man.png" alt="Випічка батонів">
         </section>
-        
+
         <section id="chefs-section">
+            <div class="container">
+                <h2 class="main-title">Наші - найкращі <span class="chef-cook">шеф-кухарі</span></h2>
+                <article>
+                    <ul>
+                        <li>
+                            <h3>Настя</h3>
+                            <P>Привіт, я Настя!</P>
+                            <P>
+                                Вже 10 років, я свтілюю
+                                у життя цікаві та смачні ідеї.
+                            </P>
+                            <P>
+                                Я випічу для вас
+                                найсмачніщі вироби!
+                            </P>
+                        </li>
+                    </ul>
+                </article>
+                <article>
+                    <li>
+                        <h3>Влад</h3>
+                        <P>Привіт, я Влад!</P>
+                        <P>
+                            Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз
+                            з
+                            Вами
+                            через нашу випічку!
+                        </P>
+                        <P>Я зроблю для вас унікальну начинку на будь який смак!</P>
+                    </li>
+                </article>
+            </div>
         </section>
 
         <section id="contact-section">
         </section>
 
-        <section>
-
-            <h2 class="main-title">Новий формат традицій</h2>
-            <p><span>shop bakery</span> — це пекарня, яка взяла все найкраще, і зберегла смак традиційної випічки та
-                натуральність інгредієнтів.
-            </p>
-            <p>
-                Ми працюємо як найвідоміші мережі—
-                <span>5 хвилин і замовлення готове</span>.
-                А ще у наших пекарень стильний дизайн
-                та висока якість обслуговування!
-            </p>
-
+        <section class="main-section">
+            <div class="container">
+                <img src="sources/img/baker-man.png" alt="Випічка батонів">
+                <h2 class="main-title">Новий формат традицій</h2>
+                <p><span class="shop-name">shop bakery</span> — це пекарня, яка взяла все найкраще, і зберегла смак
+                    традиційної випічки та
+                    натуральність інгредієнтів.
+                </p>
+                <p>
+                    Ми працюємо як найвідоміші мережі—
+                    <span>5 хвилин і замовлення готове</span>.
+                    А ще у наших пекарень стильний дизайн
+                    та висока якість обслуговування!
+                </p>
+            </div>
         </section>
-        <section>
-            <h2 class="main-title">Наші - найкращі кухарі</h2>
-            <article>
-                <ul>
-                    <li>
-                        <h3>Настя</h3>
-                        <P>Привіт, я Настя!</P>
-                        <P>
-                            Вже 10 років, я свтілюю
-                            у життя цікаві та смачні ідеї.
-                        </P>
-                        <P>
-                            Я випічу для вас
-                            найсмачніщі вироби!
-                        </P>
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <li>
-                    <h3>Влад</h3>
-                    <P>Привіт, я Влад!</P>
-                    <P>
-                        Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з
-                        Вами
-                        через нашу випічку!
-                    </P>
-                    <P>Я зроблю для вас унікальну начинку на будь який смак!</P>
-                </li>
-            </article>
-        </section>
-        <section>
-            <h2 class="main-title">Формати</h2>
-            <article>
-                <li>
-                    <h3 lang="'en">Walrus</h3>
-                </li>
-            </article>
-            <article>
-                <li>
-                    <h3 lang="'en">Horseshoe</h3>
-                </li>
-            </article>
-            <article>
-                <li>
-                    <h3 lang="'en">Handlebar</h3>
-                </li>
-            </article>
-        </section>
-        <section>
-            <h2 class="main-title">Приєднуйся до мережі пекарень</h2>
 
+        <section>
+            <div class="container">
+                <h2 class="main-title">Формати</h2>
+                <div class="container">
+                    <article>
+                        <li>
+                            <h3 lang="'en">Walrus</h3>
+                        </li>
+                    </article>
+                    <article>
+                        <li>
+                            <h3 lang="'en">Horseshoe</h3>
+                        </li>
+                    </article>
+                    <article>
+                        <li>
+                            <h3 lang="'en">Handlebar</h3>
+                        </li>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="invite-to-us">
+            <div class="container">
+                <h2 class="main-title">Приєднуйся до мережі пекарень</h2>
+                <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <nav>
-            <img src="sources/img/logo.svg" alt="Сучасна пекарня логотип">
-            <ul>
-                <li><a href="#">Франшиза</a></li>
-                <li><a href="#">Наші традиції</a></li>
-                <li><a href="#">Формати</a></li>
-                <li><a href="#">Контакти</a></li>
-            </ul>
-        </nav>
-        <address>
-            <ul>
-                <li><a href="tel:+38 063 899 0535">+38 063 899 0535</a></li>
-                <li><a href="mailto:vladmelnikov022@gmail.com">vladmelnikov022@gmail.com</a></li>
-                <li><a href="https://maps.app.goo.gl/emS9zmw4kf6QyqG59" target="_blank">Українаб м. Миколаїв, вул.
-                        Соборна 21</a></li>
-
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
-            <a href="#" target="_blank">Політика конфіденційності</a>
-            <p>&copy; Дані захищені</p>
-        </address>
-
+        <div class="container">
+            <nav>
+                <img src="sources/img/logo.svg" alt="Сучасна пекарня логотип">
+                <ul>
+                    <li><a href="#">Франшиза</a></li>
+                    <li><a href="#">Наші традиції</a></li>
+                    <li><a href="#">Формати</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </nav>
+            <address>
+                <ul>
+                    <li><a href="tel:+38 063 899 0535">+38 063 899 0535</a></li>
+                    <li><a href="mailto:vladmelnikov022@gmail.com">vladmelnikov022@gmail.com</a></li>
+                    <li><a href="https://maps.app.goo.gl/emS9zmw4kf6QyqG59" target="_blank">Українаб м. Миколаїв, вул.
+                            Соборна 21</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+                <a href="#" target="_blank">Політика конфіденційності</a>
+                <p>&copy; Дані захищені</p>
+            </address>
+        </div>
     </footer>
 
 </body>
