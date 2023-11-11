@@ -1,6 +1,13 @@
-* {
+*, 
+*::before, 
+*::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
 }
 
 .container {
@@ -11,7 +18,8 @@
 }
 
 :root {
-    --color-brand: #819b57
+    --color-brand: #819b57;
+    --color-background: #faf4ea;
 }
 
 .nav-bar li {
@@ -20,33 +28,68 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: var(--color-background);
 }
 
-button > .main-btn {
-    color: #faf4ea;
-    background-color: var(--color-brand0);
-    border: 2px solid #819b57;
+button {
+    display: flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
     border-radius: 8px;
+    border: 2px solid #819B57;
+    background: #819B57;
+    color: #FAF4EA;
+    text-align: center;
 }
 
-.button:hover {
+button:hover {
+    background-color: #FAF4EA;
+    color: var(--color-brand);
+    cursor: pointer;
+}
+
+/* .button:hover {
     color: crimson;
     background-color: transparent;
 
+} */
+
+.header-item {
+    color: rgb(255, 204, 63);
+    margin-right: 64px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
 }
 
-.header-link {
-    color: rgb(255, 196, 0);
-}
-
-.header-link:hover {
+.header-item:hover {
     color: #819b57;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 ul, a {
     list-style-type: none;
     text-decoration: none;
 }
+
 
 .hero-title {
     color: var(--bakery-landing-1-c-2, #ffffff);
@@ -60,15 +103,30 @@ ul, a {
 
 .hero-section {
     padding: 272px 0;
-    background-color: #b5d67f;
+}
+
+.hero-section {
+    background-image: url('file:///D:/Dev_projects/Genius.space/sources/img/couple.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .modern-bakery {
     color: #819B57;
 }
 
-.advantages-list {
+.advantages-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #819B57;
+    padding: 16px 0;
+}
+
+.advantages-list {
+    display: flex;
+    justify-content: space-between;
     color: var(--bakery-landing-1-background, #FAF4EA);
     font-family: Poppins;
     font-size: 20px;
@@ -77,14 +135,107 @@ ul, a {
     line-height: normal;
 }
 
-.main-title {
-    color: #31261A;
+.traditions-container {
+    display: flex;
+    gap: 100px;
+    align-items: center;
 }
 
-/* .container img {
+.traditions-text {
+    max-width: 280px;
+}
+
+.main-title {
+    color: #31261A;
+    font-size: 64px;
+    font-weight: 900;
+}
+
+
+
+/* Chefs Section */
+#chefs-section {
+    margin-top: 80px;
+}
+
+.name-title {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.chefs-title {
+    max-width: 582px;
+    margin-bottom: 80px;
+    margin: 0px auto 80px;
+    text-align: center;
+}
+
+.chefs-title::after {
     display: block;
-    justify-content: end;
-} */
+    width: 352px;
+    content: '';
+    border: 2px solid #31261A;
+}
+
+.chefs-title::before {
+    display: block;
+    width: 352px;
+    content: '';
+    border: 2px solid #31261A;
+}
+
+.chefs-list {
+    display: flex;
+    gap: 40px 30px;
+    flex-wrap: wrap;
+}
+
+.chefs-item {
+    flex-basis: calc(100% - 30px / 2);
+}
+
+.chef-card {
+    display: flex;
+    gap: 30px;
+}
+
+.chef-photo {
+    border-radius: 4px 4px 4px 200px;
+    border: 1px solid var(--bakery-landing-14, #A18268);
+    box-shadow: -16px 16px 0 0 var(--color-background), -16px 16px 0 2px #A18268;
+}
+
+
+
+/* Formats section */
+.formats-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.formats-list {
+    display: flex;
+    gap: 20px;
+}
+
+.section-title.centered, .chef-section {
+    text-align: center;
+}
+
+.formats-item {
+    flex-basis: calc((100%-40px) / 3);
+}
+
+.format-card {
+    height: 444px;
+    padding: 24px;
+    border: 1px solid whitesmoke;
+    border-radius: 16px;
+    background-image: url('file:///D:/Dev_projects/Genius.space/sources/img/puri1.png');
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
+}
 
 .chef-cook {
     color:#465929;
@@ -100,7 +251,31 @@ ul, a {
     text-transform: uppercase;
 }
 
-.invite-to-us p {
+
+/* Contact section */
+.contact-section {
+    padding-bottom: 96px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 32px;
+}
+
+.contact-title {
+    margin-bottom: 16px;
+}
+
+.contact-map {
+    flex-shrink: 0;
+    border-radius: 16px;
+}
+
+#contact-section {
+    margin-top: 80px;
+}
+
+#contact-section p {
     color: var(--bakery-landing-13, #465929);
     width: 605px;
     font-family: Poppins;
@@ -108,4 +283,51 @@ ul, a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+
+/* Carousel section */
+.carousel-button {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.carousel-arrow {
+    fill: #31261A;
+}
+
+
+/* Footer section */
+.footer {
+    background-image: url('file:///D:/Dev_projects/Genius.space/sources/img/footer-background.png');
+    background-color: #31261A;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 32px 0;
+}
+
+.adress-icon {
+    fill: #FAF4EA;
+}
+
+.footer-container {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-logo, .footer-menu {
+    flex-grow: 1;
+}
+
+.footer-nav, .footer-address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+.address-list, .address-info {
+    flex-grow: 1;
 }
